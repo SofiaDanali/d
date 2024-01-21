@@ -1,0 +1,42 @@
+.dropdown-toggle::after {
+    transition: transform 0.15s linear;
+}
+
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+}
+
+.nav-item { 
+    font-size: 18px;
+}
+
+nav {
+    border-bottom: 1px solid gray;
+}
+
+.nav-link:not(.tab-link):hover,
+.nav-link:not(.tab-link)[aria-expanded="true"],
+.nav-link:not(.tab-link).active {
+    /* color: gray; */
+    font-weight: bold;
+    color: var(--mainLight) !important;
+}
+
+.logoCenter {
+    display: flex; 
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.collapseButtonWrapper {
+    display: flex; 
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: flex-end;
+    border: none;
+}
+
+button.navbar-toggler {
+    border: var(--bs-border-width) solid var(--mainLight);
+}

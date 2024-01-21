@@ -1,0 +1,134 @@
+:root {
+    --mainDark: #222831;
+    --mainLight: white;
+    --content-colour: #393e46;
+    --shadow: rgba(0, 0, 0, 0.5);
+    --bs-green: #198754;
+    --bs-red: #dc3545;
+}
+
+body {
+    background-color: var(--content-colour);
+    color: var(--mainLight);
+}
+
+.wrap-with-border {
+    border: 2px solid var(--mainLight);
+    border-radius: 0.35rem;
+    padding: 1.5rem;
+    box-shadow: 0px 5px 10px 0px var(--shadow); 
+}
+
+.mw-30 {
+    max-width: 30%;
+}
+
+.mw-15 {
+    max-width: 15%;
+}
+
+.mh-100px {
+    max-height: 100px;
+}
+
+label.required::after {
+    content: " *";
+    color: red;
+}
+
+.bg-mainDark {
+    background-color: var(--mainDark);
+    color: var(--mainLight);
+}
+
+.mainLightColour {
+    color: var(--mainLight);
+}
+
+/* Use the old border here in case you remove the buttons 3d effect */
+.btn-primary {
+    background-color: var(--mainDark);
+    border: 1px solid var(--mainDark);
+    font-weight: bold; 
+}
+
+.btn-primary:hover {
+    background-color: var(--mainLight);
+    color: var(--mainDark);
+}
+
+/* Use the old border here in case you remove the buttons 3d effect */
+.btn-color {
+    background-color: var(--mainDark) !important;
+    border: 1px solid var(--mainDark) !important;
+}
+
+.btn-color:hover {
+    background-color: var(--mainLight) !important;
+    color: var(--mainDark) !important;
+}
+
+
+.form-label {
+    color: var(--mainDark);
+    font-weight: bold;
+}
+
+/* Remove this if you don't want the 3d effect on buttons */
+.btn {
+    box-shadow: 0px 5px 10px 0px var(--shadow) !important; 
+}
+
+/* Optional animations cause I just had to play around */
+.btn {
+    transition: transform .2s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    z-index: 10000;
+}
+
+.tab-link.nav-link {
+    color: var(--mainDark);
+    font-weight: bold;
+}
+
+.tab-link.nav-link.active {
+    color: gray;
+}
+
+.sticky-col {
+    position: sticky;
+    left: 0;
+}
+
+table.blocked {
+    pointer-events: none; 
+    opacity: 0.5;
+}
+
+.vh-95 {
+    height: 95vh;
+}
+
+.vw-100 {
+    width: 100vw;
+}
+
+label.form-label {
+    color: var(--mainLight);
+}
+
+div.invalid-feedback, div.valid-feedback {
+    font-weight: bold;
+}
+
+li.list-group-item {
+    color: var(--mainLight);
+    background-color: var(--mainDark);
+}
+
+.mh-50vh {
+    height: 50vh;
+}
